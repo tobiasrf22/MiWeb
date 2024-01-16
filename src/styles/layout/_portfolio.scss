@@ -1,0 +1,57 @@
+.portfolio {
+    margin-top: $margenTop;
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    @include phone{
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+    @include tablet{
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        
+    }
+
+}
+
+.card {
+    background-color: transparent;
+    border: solid 0.2rem $celeste;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $blanco;   
+    
+    h3,h5{
+        text-transform: capitalize; 
+    }
+    h3{
+        margin: 0 0;
+        color: $celeste;
+        
+    }
+    h5 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: $celeste;
+        
+    }
+    p {
+        color: grey;
+      font-size: 1.5rem;
+    }
+    a {
+        font-size: 1.7rem;
+        color: $celeste;
+        cursor: pointer;
+        text-align: right;
+    }
+}

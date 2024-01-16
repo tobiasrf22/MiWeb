@@ -1,0 +1,18 @@
+@import 'base/normalize';
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Montserrat:wght@300;400;700;900&family=Roboto:wght@100;300;400;500&family=Staatliches&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'layout/navbar';
+@import 'layout/principal';
+@import 'layout/aboutMe';
+@import 'layout/skills';
+@import 'layout/education';
+@import 'layout/experience';
+@import 'layout/_contactMe';
+@import 'layout/_footer';
+@import 'layout/portfolio';
+
+body{
+    font-family: $fuentePrincipal;
+}

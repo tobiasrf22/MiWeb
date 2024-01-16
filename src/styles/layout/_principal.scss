@@ -1,0 +1,60 @@
+.contenido-principal{
+    h1{
+        font-size: 5rem;
+        text-align: center;
+        margin-top: 10rem;
+        span{
+            display: block;
+            color: $celeste;
+        }
+    }
+}
+.principal-pequeño{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size:1.3rem;
+        padding: 0.5rem;
+        cursor:default;
+    }
+    p:last-child{
+        border: .1rem solid $blanco;
+        border-radius: 1rem;
+    }
+
+    @include phone{
+        gap: 2rem;
+    }
+    @include tablet{
+        gap: 5rem;
+    }
+    @include pc{
+        gap: 5rem;
+    }
+}
+
+.boton-bajar{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include phone{
+        margin-top: 25rem;    
+    }
+    @include tablet{
+        margin-top: 50rem;    
+    }
+    @include pc{
+        margin-top: 40rem;    
+    }
+    .bajar{
+        background-color: transparent;
+        cursor: pointer;
+        border: 0.2rem solid $celeste;
+        padding: 1rem .5rem;
+        border-radius: 10rem;
+    }
+
+}
+

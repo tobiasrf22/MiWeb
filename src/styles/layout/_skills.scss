@@ -1,0 +1,67 @@
+.skills{
+    margin-top: $margenTop;
+    gap: 1rem;
+    p{
+        color: grey;
+        font-size: 1.8rem;
+        text-align: justify;
+    }
+    @include phone{
+        display:flex;
+        flex-flow: column;
+    }
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include pc{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+    }
+    .bloque{
+        
+        @include phone{
+            padding-right: 0;
+        }
+        @include tablet{
+            padding-right: 4rem;
+        }
+        @include pc{
+            padding-right: 4rem;
+        }
+    }
+}
+.tit_der{
+    display: flex;
+    align-items:center;
+    h2{
+        color: grey;
+        font-size: 1.5rem;
+        vertical-align: middle;
+    }
+    
+}
+.tit_izq{
+    h2{
+        span{
+            
+            margin-left: 1rem;
+            color: $celeste;
+            @include phone{
+                font-size: 1.6rem;
+            }
+            @include tablet{
+                font-size: 2rem;
+            }
+            @include pc{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.icon{
+    vertical-align: middle;
+    
+}

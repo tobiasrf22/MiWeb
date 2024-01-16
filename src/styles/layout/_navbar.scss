@@ -1,0 +1,128 @@
+.header{
+    display: block;
+    padding: 2rem;
+
+    .contenido-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            width: 11rem;
+        }
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            gap: 6rem;
+        }
+    }
+}
+
+.navegacion-principal{
+    /*display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    a{
+        font-size: 2rem;
+
+    }*/
+    display: flex;
+    
+
+    .link{
+        font-size: 1.5rem;
+        margin-right: 3rem;
+        width: auto;
+        text-align: center;
+        padding: 0.5rem 0;
+        cursor: pointer; 
+    
+        &:last-child{
+            border: 0.2rem solid $blanco;
+            border-radius: .4rem;
+            
+
+            @include tablet{
+                border-radius: 1rem;
+                border: 0.2rem solid $celeste;
+                padding: 0.5rem 0.5rem;
+                color: $celeste;
+                
+            }
+            @include pc{
+                border-radius: .4rem;
+                border: 0.2rem solid $blanco;
+                padding: 0.5rem 3rem;
+            }
+        }
+
+        @include phone{
+            font-size: 2rem;
+        }
+        @include tablet{
+            font-size: 1.7rem;
+            margin-right: auto;
+            
+        }
+        @include pc{
+            font-size: 2.1rem;
+            margin-right: 3rem;
+        }
+    }
+
+    @include phone{
+        gap: 2.5rem;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+}
+
+
+.openBoton{
+    font-size: 4rem;
+}
+
+.sidenav-close,
+.sidenav-open{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba($color: #000000, $alpha: .88);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: $blanco;
+        display: block;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+    a:hover {
+        color: #f1f1f1;
+    }
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        cursor: pointer;
+      }
+    .contact{
+        border: 0.2rem solid $blanco;
+        border-radius: .4rem;
+            
+    }
+}
+
+.sidenav-open{
+    width: 25rem;
+}
+

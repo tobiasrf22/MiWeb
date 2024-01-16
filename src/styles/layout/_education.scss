@@ -1,0 +1,64 @@
+/* Timeline Container */
+.education{
+  margin-top: $margenTop;
+}
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    
+    display: flex;
+    justify-content: center;
+}
+  
+  /* Outer Layer with the timeline border */
+  .outer {
+    border-left: 0.11rem solid $blanco;
+  }
+  
+  /* Card container */
+  .card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    border-radius: 8px;
+    max-width: 400px;
+  }
+  
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    //gap: 10px;
+    h3{
+        margin: 0 0;
+        color: $celeste;
+    }
+    h4{
+      color: $blanco;
+      font-weight: $delgada;
+    }
+    p{
+      color: grey;
+      font-size: 1.7rem;
+      text-align: justify;
+
+      @include phone{
+        text-align:start;
+      }
+      @include tablet{
+        text-align: justify;
+      }
+    }
+
+  }
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: #100f24;
+    border-radius: 999px;
+    left: -3.1rem;
+    border: 0.15rem solid $blanco;
+  }
+  
