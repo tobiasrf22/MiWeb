@@ -1,0 +1,91 @@
+.technologies {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+
+    @include phone{
+        grid-template-columns: repeat(2,1fr);
+    }
+    @include tablet{
+        grid-template-columns: repeat(2,1fr);
+    }
+    @include pc{
+        grid-template-columns: repeat(3,1fr);
+    }
+    @include bigPc{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .tech {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .8rem;
+        width: auto;
+        padding: 0 1rem;
+        border-radius: 1rem;
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+    }
+
+}
+
+.react {
+    background-color: #149eca;
+    color: white;
+}
+
+.sass {
+    background-color: #bf4080;
+    color: white;
+}
+
+.javascript {
+    background-color: #ffdf1e;
+    color: black
+}
+
+.gulp{
+    background-color: #d23232;
+    color: white;
+}
+.python{
+    background-color: #0078ac;
+    color: white;
+}
+
+.nodejs{
+    background-color: #65a831;
+    color: black;
+}
+
+.php{
+    background-color: #787cb4;
+    color: black;
+}
+
+.nextjs{
+    background-color: #0B0B0B;
+    color: white;
+    border: .1rem solid gray;
+}
+.wordpress{
+    background-color: #21759b;
+    color: white;
+}
+.github{
+    background-color: #8463fe;
+    color: white;
+}
+.sql{
+    background-color: #db7533;
+    color:black;
+}
+.mongo{
+    background-color: #07ab4f;
+    color: white;
+}

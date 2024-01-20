@@ -5,6 +5,7 @@ import { FaSass } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiGulp } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
 
 
 
@@ -27,6 +28,10 @@ export const Portfolio = () => {
             <div className='tech javascript'>
               <IoLogoJavascript size={20} />
               <h4>Javascript</h4>
+            </div>
+            <div className='tech nodejs'>
+              <FaNodeJs  size={20} />
+              <h4>NodeJS</h4>
             </div>
           </div>
           <p>Build from scratch, it use openweatherAPI</p>

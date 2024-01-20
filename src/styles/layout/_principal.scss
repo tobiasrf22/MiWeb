@@ -40,13 +40,13 @@
     justify-content: center;
     align-items: center;
     @include phone{
-        margin-top: 5rem;    
+        margin-top: 11rem;    
     }
     @include tablet{
-        margin-top: 5rem;    
+        margin-top: 35rem;    
     }
     @include pc{
-        margin-top: 15rem;    
+        margin-top: 20rem;    
     }
     @include bigPc{
         margin-top: 30rem;

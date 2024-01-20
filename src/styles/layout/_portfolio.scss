@@ -4,23 +4,23 @@
     .cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
 
-    @include phone {
-        .cards {
+        @include phone {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
         }
-    }
 
-    @include tablet {
-        .cards {
+        @include tablet {
             display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include pc {
             grid-template-columns: repeat(3, 1fr);
         }
-
+        @include bigPc {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
-
 }
 
 .cardP {
@@ -29,10 +29,9 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     color: $blanco;
     min-height: 21rem;
-
+    position: relative;
     margin: 0 0 20px 20px;
     border-radius: 8px;
     max-width: 400px;
@@ -51,62 +50,22 @@
         font-size: 1.5rem;
         font-weight: 300;
         color: $celeste;
-
     }
 
     p {
         margin: 1.2rem 0; /* Ajusta el margen superior e inferior según sea necesario */
         color: grey;
         font-size: 1.5rem;
+        margin-bottom: 3.5rem;
     }
 
     a {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
         font-size: 1.7rem;
         color: $celeste;
         cursor: pointer;
         text-align: right;
     }
-}
-
-.technologies {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-
-    .tech {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: .8rem;
-        width: auto;
-        padding: 0 1rem;
-        border-radius: 1rem;
-
-        h4 {
-            font-size: 1.5rem;
-        }
-    }
-
-}
-
-
-.react {
-    background-color: #149eca;
-}
-
-.sass {
-    background-color: #bf4080;
-}
-
-.javascript {
-    background-color: #ffdf1e;
-    color: black
-}
-
-.gulp{
-    background-color: #d23232;
-}
-.python{
-    background-color: #0078ac;
 }
