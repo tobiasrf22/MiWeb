@@ -3,55 +3,110 @@
 
     .cards {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
-    @include phone{
-        .cards{
+
+    @include phone {
+        .cards {
             display: grid;
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(1, 1fr);
         }
     }
-    @include tablet{
-        .cards{
+
+    @include tablet {
+        .cards {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
-        
+
     }
 
 }
 
-.card {
+.cardP {
     background-color: transparent;
     border: solid 0.2rem $celeste;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: $blanco;   
-    
-    h3,h5{
-        text-transform: capitalize; 
+    color: $blanco;
+    min-height: 21rem;
+
+    margin: 0 0 20px 20px;
+    border-radius: 8px;
+    max-width: 400px;
+
+    h3,
+    h5 {
+        text-transform: capitalize;
     }
-    h3{
-        margin: 0 0;
+
+    h3 {
+        margin: 0; /* Agregamos esta línea para eliminar el margen superior e inferior */
         color: $celeste;
-        
     }
+
     h5 {
         font-size: 1.5rem;
         font-weight: 300;
         color: $celeste;
-        
+
     }
+
     p {
+        margin: 1.2rem 0; /* Ajusta el margen superior e inferior según sea necesario */
         color: grey;
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
+
     a {
         font-size: 1.7rem;
         color: $celeste;
         cursor: pointer;
         text-align: right;
     }
+}
+
+.technologies {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    .tech {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .8rem;
+        width: auto;
+        padding: 0 1rem;
+        border-radius: 1rem;
+
+        h4 {
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+
+.react {
+    background-color: #149eca;
+}
+
+.sass {
+    background-color: #bf4080;
+}
+
+.javascript {
+    background-color: #ffdf1e;
+    color: black
+}
+
+.gulp{
+    background-color: #d23232;
+}
+.python{
+    background-color: #0078ac;
 }

@@ -40,13 +40,13 @@
     justify-content: center;
     align-items: center;
     @include phone{
-        margin-top: 25rem;    
+        margin-top: 5rem;    
     }
     @include tablet{
-        margin-top: 50rem;    
+        margin-top: 5rem;    
     }
     @include pc{
-        margin-top: 40rem;    
+        margin-top: 15rem;    
     }
     .bajar{
         background-color: transparent;
