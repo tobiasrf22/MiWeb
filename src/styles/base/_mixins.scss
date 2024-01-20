@@ -15,6 +15,11 @@
         @content;
     }
 }
+@mixin bigPc{
+    @media (min-width:$bigDesktop){
+        @content;
+    }
+}
 @mixin grid($columnas, $espaciado) {
     display: grid;
     grid-template-columns: repeat($columnas, 1fr);
