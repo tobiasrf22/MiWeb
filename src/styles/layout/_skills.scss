@@ -1,5 +1,17 @@
 .skills{
     margin-top: $margenTop;
+    @include phone {
+    margin-top: $margenTop/2;
+    }
+    @include tablet {
+    margin-top: $margenTop;
+    }
+    @include pc {
+    margin-top: $margenTop;
+    }
+    @include bigPc {
+    margin-top: $margenTop;
+    }
     gap: 1rem;
     p{
         color: grey;

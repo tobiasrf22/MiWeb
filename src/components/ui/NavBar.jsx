@@ -49,7 +49,7 @@ export const NavBar = () => {
           <Link className="link"
           to="aboutMe" spy={true}
           smooth={true}
-          offset={-70}
+          offset={-100}
           duration={700}
           onClick={changeOverflow}
           >
@@ -57,7 +57,7 @@ export const NavBar = () => {
           <Link className="link"
           to="skills" spy={true}
           smooth={true}
-          offset={-70}
+          offset={-100}
           duration={1000}
           onClick={changeOverflow}
           >
@@ -65,7 +65,7 @@ export const NavBar = () => {
           <Link className="link"
           to="portfolio" spy={true}
           smooth={true}
-          offset={-70}
+          offset={-100}
           duration={1000}
           onClick={changeOverflow}
           >
@@ -73,7 +73,7 @@ export const NavBar = () => {
           <Link className="link"
           to="education" spy={true}
           smooth={true}
-          offset={-70}
+          offset={-100}
           duration={1000}
           onClick={changeOverflow}
           >
@@ -81,7 +81,7 @@ export const NavBar = () => {
           <Link className="link"
           to="experience" spy={true}
           smooth={true}
-          offset={-70}
+          offset={-100}
           duration={1000}
           onClick={changeOverflow}
           >
@@ -89,7 +89,7 @@ export const NavBar = () => {
           <Link className={screenSize <= 480 ? 'link contact' : 'link'}
           to="contact" spy={true}
           smooth={true}
-          offset={-70}
+          offset={-100}
           duration={1000}
           onClick={changeOverflow}
           >

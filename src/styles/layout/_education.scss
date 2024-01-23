@@ -1,6 +1,17 @@
 /* Timeline Container */
 .education{
-  margin-top: $margenTop;
+  @include phone {
+    margin-top: $margenTop;
+    }
+    @include tablet {
+    margin-top: $margenTop*1.4;
+    }
+    @include pc {
+    margin-top: $margenTop*1.4;
+    }
+    @include bigPc {
+    margin-top: $margenTop*1.4;
+    }
 }
 .timeline {
     background: var(--primary-color);
