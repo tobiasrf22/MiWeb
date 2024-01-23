@@ -1,82 +1,83 @@
 .portfolio {
-    @include phone {
+  @include phone {
     margin-top: $margenTop;
+  }
+  @include tablet {
+    margin-top: $margenTop * 1.4;
+  }
+  @include pc {
+    margin-top: $margenTop * 1.4;
+  }
+  @include bigPc {
+    margin-top: $margenTop * 1.4;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include phone {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
     }
+
     @include tablet {
-    margin-top: $margenTop*1.4;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
     @include pc {
-    margin-top: $margenTop*1.4;
+      grid-template-columns: repeat(3, 1fr);
     }
     @include bigPc {
-    margin-top: $margenTop*1.4;
+      grid-template-columns: repeat(3, 1fr);
     }
-
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-        @include phone {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        @include tablet {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-        @include pc {
-            grid-template-columns: repeat(3, 1fr);
-        }
-        @include bigPc {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
+  }
 }
 
 .cardP {
-    background-color: transparent;
-    border: solid 0.2rem $celeste;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    color: $blanco;
-    min-height: 21rem;
-    position: relative;
-    margin: 0 0 20px 20px;
-    border-radius: 8px;
-    max-width: 400px;
+  background-color: transparent;
+  border: solid 0.2rem $celeste;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: $blanco;
+  min-height: 21rem;
+  position: relative;
+  margin: 0 0 20px 20px;
+  border-radius: 8px;
+  max-width: 400px;
 
-    h3,
-    h5 {
-        text-transform: capitalize;
-    }
+  h3,
+  h5 {
+    text-transform: capitalize;
+  }
 
-    h3 {
-        margin: 0; /* Agregamos esta línea para eliminar el margen superior e inferior */
-        color: $celeste;
-    }
+  h3 {
+    margin: 0; /* Agregamos esta línea para eliminar el margen superior e inferior */
+    color: $celeste;
+  }
 
-    h5 {
-        font-size: 1.5rem;
-        font-weight: 300;
-        color: $celeste;
-    }
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $celeste;
+  }
 
-    p {
-        margin: 1.2rem 0; /* Ajusta el margen superior e inferior según sea necesario */
-        color: grey;
-        font-size: 1.5rem;
-        margin-bottom: 3.5rem;
-    }
+  p {
+    margin: 1.2rem 0; /* Ajusta el margen superior e inferior según sea necesario */
+    color: grey;
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
 
-    a {
-        position: absolute;
-        bottom: 2rem;
-        right: 2rem;
-        font-size: 1.7rem;
-        color: $celeste;
-        cursor: pointer;
-        text-align: right;
-    }
+  a {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 1.7rem;
+    color: $celeste;
+    cursor: pointer;
+    text-align: right;
+    text-decoration: underline;
+  }
 }
