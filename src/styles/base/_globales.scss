@@ -22,6 +22,19 @@ html {
 
 body{
   overflow: hidden;
+
+  @include phone {
+  overflow: auto;
+  }
+  @include tablet {
+  overflow: hidden;
+  }
+  @include pc {
+  overflow: hidden;
+  }
+  @include bigPc {
+  overflow: hidden;
+  }
 }
 
 .contenedor{

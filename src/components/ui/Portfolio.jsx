@@ -34,7 +34,10 @@ export const Portfolio = () => {
             </div>
           </div>
           <p>Build from scratch, it use openweatherAPI</p>
-          <a target="_blank" href="https://weather-react-app-lemon.vercel.app/">
+          <a className="github" target="_blank" href="https://github.com/tobiasrf22/myweb-api-">
+            Github <FaGithub size={20} />
+          </a>
+          <a className="demo" target="_blank" href="https://weather-react-app-lemon.vercel.app/">
             Live demo <FaExternalLinkAlt size={10} />
           </a>
         </div>
@@ -58,7 +61,7 @@ export const Portfolio = () => {
             Gulp, Sass, and JavaScript for automation, styling, and
             functionality.
           </p>
-          <a target="_blank" href="https://rockedmfesival.netlify.app/">
+          <a className="demo" target="_blank" href="https://rockedmfesival.netlify.app/">
             Live demo <FaExternalLinkAlt size={10} />
           </a>
         </div>
@@ -74,8 +77,11 @@ export const Portfolio = () => {
             API developed by me for a personal project, uses tokens for post,
             delete and returns a JSON.
           </p>
-          <a target="_blank" href="https://github.com/tobiasrf22/myweb-api-">
+          <a className="github" target="_blank" href="https://github.com/tobiasrf22/myweb-api-">
             Github <FaGithub size={20} />
+          </a>
+          <a className="demo soon" href="#">
+            Soon
           </a>
         </div>
       </div>

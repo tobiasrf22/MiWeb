@@ -1,0 +1,71 @@
+.navmenu {
+    position: fixed;
+    right: 0;
+    top: 25%;
+    background-image: linear-gradient(
+      105deg,
+      hsl(240deg 44% 11%) 0%,
+      hsl(241deg 43% 10%) 10%,
+      hsl(241deg 42% 10%) 19%,
+      hsl(242deg 41% 10%) 28%,
+      hsl(242deg 40% 10%) 37%,
+      hsl(243deg 39% 10%) 46%,
+      hsl(243deg 38% 9%) 56%,
+      hsl(243deg 36% 9%) 66%,
+      hsl(244deg 35% 9%) 76%,
+      hsl(244deg 33% 9%) 88%,
+      hsl(244deg 32% 9%) 100%
+    );
+    z-index: 3;
+    border: solid .2rem  $celeste;
+    border-right: none;
+    border-radius: 1rem 0 0 1rem;
+  @include phone {
+    display: none;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+  @include pc {
+    display: flex;
+    flex-direction: column;
+  }
+  @include bigPc {
+    display: flex;
+    flex-direction: column;
+  }
+  .link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    font-size: 2rem;
+    padding: 1.5rem;
+    padding-top: 2rem;
+    cursor: pointer;
+    border-bottom: solid rgba($color: $celeste, $alpha: .1) .1rem;
+
+    
+    @include tablet {
+    padding: .5rem;
+    font-size: 1.5rem;
+    }
+    @include pc {
+    padding: 1.5rem;
+    font-size: 2rem;
+    }
+    @include bigPc {
+    padding: 1.5rem;
+    font-size: 2rem;
+    }
+
+    &:hover{
+        background-color: $celeste;
+        border-radius: 0 0 0 0 ;
+        color: black;
+        overflow: hidden;
+    }
+  }
+}

@@ -7,13 +7,32 @@
         justify-content: space-between;
         align-items: center;
 
+        @include phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        @include tablet {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        gap: 6rem;
+        }
+        @include pc {
+        justify-content: space-between;
+        align-items: center;
+        }
+        @include bigPc {
+        justify-content: space-between;
+        align-items: center;
+        }
         img{
             width: 11rem;
+
         }
         @include tablet{
             display: flex;
-            flex-direction: row;
-            gap: 6rem;
+            
         }
     }
 }
@@ -90,13 +109,16 @@
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgba($color: #000000, $alpha: .88);
+    background-color: rgba($color: #000000, $alpha: .94);
     overflow-x: hidden;
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding-top: 60px;
 
     a {
-        padding: 8px 8px 8px 32px;
+        padding: .8rem .8rem .8rem 3.2rem;
         text-decoration: none;
         font-size: 25px;
         color: $blanco;
@@ -118,6 +140,7 @@
     .contact{
         border: 0.2rem solid $blanco;
         border-radius: .4rem;
+        margin-top: 0;
             
     }
 }

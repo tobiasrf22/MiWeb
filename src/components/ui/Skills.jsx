@@ -56,6 +56,9 @@ export const Skills = () => {
                         <FaPython size={20} />
                         <h4>Python</h4>
                     </div>
+                    <div className='tech cplus'>
+                        <h4>C++</h4>
+                    </div>
                 </div>
             </div>
 
@@ -112,11 +115,11 @@ export const Skills = () => {
                 </h3>
                 <div className='technologies'>
                     <div className='tech sql'>
-                        <TbFileTypeSql  size={20} />
+                        <TbFileTypeSql size={20} />
                         <h4>SQL</h4>
                     </div>
                     <div className='tech mongo'>
-                        <DiMongodb   size={20} />
+                        <DiMongodb size={20} />
                         <h4>MongoDB</h4>
                     </div>
                 </div>

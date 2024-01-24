@@ -70,7 +70,7 @@
     margin-bottom: 3.5rem;
   }
 
-  a {
+  .demo {
     position: absolute;
     bottom: 2rem;
     right: 2rem;
@@ -79,5 +79,25 @@
     cursor: pointer;
     text-align: right;
     text-decoration: underline;
+  }
+  .github {
+    background-color: #9708ff;
+    padding: .5rem;
+    border-radius: .5rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 1.7rem;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .soon{
+    text-decoration: none;
+    pointer-events: none;
   }
 }
