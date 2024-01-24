@@ -7,6 +7,7 @@ import { SiGulp } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { DiMongodb } from "react-icons/di";
 
 export const Portfolio = () => {
   return (
@@ -34,10 +35,18 @@ export const Portfolio = () => {
             </div>
           </div>
           <p>Build from scratch, it use openweatherAPI</p>
-          <a className="github" target="_blank" href="https://github.com/tobiasrf22/myweb-api-">
+          <a
+            className="github"
+            target="_blank"
+            href="https://github.com/tobiasrf22/myweb-api-"
+          >
             Github <FaGithub size={20} />
           </a>
-          <a className="demo" target="_blank" href="https://weather-react-app-lemon.vercel.app/">
+          <a
+            className="demo"
+            target="_blank"
+            href="https://weather-react-app-lemon.vercel.app/"
+          >
             Live demo <FaExternalLinkAlt size={10} />
           </a>
         </div>
@@ -61,7 +70,11 @@ export const Portfolio = () => {
             Gulp, Sass, and JavaScript for automation, styling, and
             functionality.
           </p>
-          <a className="demo" target="_blank" href="https://rockedmfesival.netlify.app/">
+          <a
+            className="demo"
+            target="_blank"
+            href="https://rockedmfesival.netlify.app/"
+          >
             Live demo <FaExternalLinkAlt size={10} />
           </a>
         </div>
@@ -77,11 +90,53 @@ export const Portfolio = () => {
             API developed by me for a personal project, uses tokens for post,
             delete and returns a JSON.
           </p>
-          <a className="github" target="_blank" href="https://github.com/tobiasrf22/myweb-api-">
+          <a
+            className="github"
+            target="_blank"
+            href="https://github.com/tobiasrf22/myweb-api-"
+          >
             Github <FaGithub size={20} />
           </a>
           <a className="demo soon" href="#">
             Soon
+          </a>
+        </div>
+        <div className="cardP">
+          <h3>Motel booking web</h3>
+          <div className="technologies">
+            <div className="tech react">
+              <FaReact size={20} />
+              <h4>React</h4>
+            </div>
+            <div className='tech sass'>
+                        <FaSass size={20} />
+                        <h4>Sass</h4>
+            </div>
+            <div className='tech nodejs'>
+                        <FaNodeJs size={20} />
+                        <h4>NodeJs</h4>
+            </div>
+            <div className='tech mongo'>
+                        <DiMongodb size={20} />
+                        <h4>MongoDB</h4>
+            </div>
+          </div>
+          <p>
+            Personal proyect, is redesign for <a href="https://www.mirefugiohotel.com.ar/">this website</a>. Using mongo to get the rooms and the info.
+          </p>
+          <a
+            className="github"
+            target="_blank"
+            href="https://github.com/tobiasrf22/booking-react-front"
+          >
+            Github <FaGithub size={20} />
+          </a>
+          <a
+            className="demo"
+            target="_blank"
+            href="https://booking-react-front.vercel.app/"
+          >
+            Live demo <FaExternalLinkAlt size={10} />
           </a>
         </div>
       </div>
