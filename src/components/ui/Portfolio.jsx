@@ -8,6 +8,7 @@ import { FaPython } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const Portfolio = () => {
   return (
@@ -34,7 +35,7 @@ export const Portfolio = () => {
               <h4>NodeJS</h4>
             </div>
           </div>
-          <p>Build from scratch, it use openweatherAPI</p>
+          <p>Build from scratch, it use openweatherAPI.</p>
           <a
             className="github"
             target="_blank"
@@ -137,6 +138,40 @@ export const Portfolio = () => {
             href="https://booking-react-front.vercel.app/"
           >
             Live demo <FaExternalLinkAlt size={10} />
+          </a>
+        </div>
+        <div className="cardP">
+          <h3>Admin web for ecommerce</h3>
+          <div className="technologies">
+          <div className='tech javascript'>
+                        <IoLogoJavascript size={20} />
+                        <h4>Javascript</h4>
+                    </div>
+            <div className='tech nextjs'>
+                        <TbBrandNextjs size={20} />
+                        <h4>NextJs</h4>
+            </div>
+            <div className='tech mongo'>
+                        <DiMongodb size={20} />
+                        <h4>MongoDB</h4>
+            </div>
+          </div>
+          <p>
+          Effortlessly manage your e-commerce inventory with our intuitive admin platform linked to a dynamic database.
+          </p>
+          <a
+            className="github"
+            target="_blank"
+            href="https://github.com/tobiasrf22/ecommerce-admin"
+          >
+            Github <FaGithub size={20} />
+          </a>
+          <a
+            className="demo soon"
+            target="_blank"
+            href="#"
+          >
+            Soon
           </a>
         </div>
       </div>
