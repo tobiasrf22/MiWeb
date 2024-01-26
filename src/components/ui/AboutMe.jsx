@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';    
 
 export const AboutMe = () => {
+    const [ref, inView] = useInView();
+
+      useEffect(() => {
+        if (inView) {
+          // Obtén la referencia al elemento con la clase 'navmenu'
+          console.log("hola aboutme")
+          const navMenuElement = document.querySelector('.navmenu');
+    
+          // Agrega la clase 'visible' si el elemento existe y aún no tiene la clase
+          navMenuElement.classList.remove('noVisible');
+            navMenuElement.classList.add('visible');
+          
+        }
+        
+      }, [inView]);
   return (
     <>
-    <section id="aboutMe" className="aboutMe contenedor2">
+    <section id="aboutMe" className="aboutMe contenedor2" ref={ref}>
         <h2>About me</h2>
         <div className="aboutMe_items">
             <ul>
