@@ -21,6 +21,19 @@
     border: solid .2rem  $celeste;
     border-right: none;
     border-radius: 1rem 0 0 1rem;
+    @include phone {
+    //transform: scale(1.2);
+    }
+    @include tablet {
+    //transform: scale(1.2);
+    }
+    @include pc {
+    transform: scale(0.8);
+    }
+    
+    @include bigPc {
+    transform: none;
+    }
   
   .link{
     display: flex;
