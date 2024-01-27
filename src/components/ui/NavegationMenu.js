@@ -38,7 +38,7 @@ const NavegationMenu = () => {
         to="aboutMe"
         spy={true}
         smooth={true}
-        offset={-100}
+        offset={-20}
         duration={700}
         onClick={changeOverflow}
       >
@@ -50,7 +50,7 @@ const NavegationMenu = () => {
         to="skills"
         spy={true}
         smooth={true}
-        offset={-150}
+        offset={-30}
         duration={1000}
         onClick={changeOverflow}
       >
@@ -62,7 +62,7 @@ const NavegationMenu = () => {
         to="portfolio"
         spy={true}
         smooth={true}
-        offset={-250}
+        offset={-30}
         duration={1000}
         onClick={changeOverflow}
       >
@@ -74,7 +74,7 @@ const NavegationMenu = () => {
         to="education"
         spy={true}
         smooth={true}
-        offset={-100}
+        offset={-30}
         duration={1000}
         onClick={changeOverflow}
       >
@@ -86,7 +86,7 @@ const NavegationMenu = () => {
         to="experience"
         spy={true}
         smooth={true}
-        offset={-100}
+        offset={-30}
         duration={1000}
         onClick={changeOverflow}
       >

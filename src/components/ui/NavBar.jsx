@@ -62,7 +62,7 @@ export const NavBar = () => {
               to="portfolio"
               spy={true}
               smooth={true}
-              offset={-250}
+              offset={-30}
               duration={1000}
               onClick={changeOverflow}
             >
