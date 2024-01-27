@@ -117,13 +117,9 @@ export const Portfolio = () => {
                         <TbBrandNextjs size={20} />
                         <h4>NextJs</h4>
             </div>
-            <div className='tech mongo'>
-                        <DiMongodb size={20} />
-                        <h4>MongoDB</h4>
-            </div>
           </div>
           <p>
-            Personal proyect, is redesign for <a href="https://www.mirefugiohotel.com.ar/">this website</a>. Using mongo to get the rooms and the info.
+            Personal proyect, is redesign for <a href="https://www.mirefugiohotel.com.ar/">this website</a>. Planning to add mongo to get the rooms and the info.
           </p>
           <a
             className="github"
