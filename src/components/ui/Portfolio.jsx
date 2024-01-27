@@ -113,9 +113,9 @@ export const Portfolio = () => {
                         <FaSass size={20} />
                         <h4>Sass</h4>
             </div>
-            <div className='tech nodejs'>
-                        <FaNodeJs size={20} />
-                        <h4>NodeJs</h4>
+            <div className='tech nextjs'>
+                        <TbBrandNextjs size={20} />
+                        <h4>NextJs</h4>
             </div>
             <div className='tech mongo'>
                         <DiMongodb size={20} />
